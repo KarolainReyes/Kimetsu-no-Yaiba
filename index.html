@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimetsu no Yaiba</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <nav>
-        <ul>
+
+<body class="pag-inicio">
+    <nav class="navbar">
+        <ul class="navbar-lista">
             <li><a href="/">Inicio</a></li>
             <li><a href="/personajes">Personajes</a></li>
             <li><a href="/capitulos">Capítulos</a></li>
         </ul>
-        <form action="/search" method="get">
-            <input type="text" name="query" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </form>
     </nav>
+    <!--PAGINA DE INICIO-->
     <main>
-        <!--PAGINA DE INICIO-->
-        <img src="/IMG/kimetsu-no-yaiba-demon-slayer-anime-nine-pillars-5ylxer2t86wb4oqv.jpg" alt="">
-        <button class="comic-button">Click me!</button>
+        <section class="pagina-inicio">
+            <div class="contenido-principal">
+                <h1 class="titulo-inicio">Bienvenido a Kimetsu no Yaiba</h1>
+                <p>Explora el mundo de Kimetsu no Yaiba, conoce a los personajes y descubre los capítulos de la serie.
+                </p>
+                <img class="imagen-principal" id="imagen-principal"
+                src="/IMG/demon-slayer-anime-kimetsu-no-yaiba-vy37autfo82jvft7.jpg" alt="">
+                <p>¡Haz clic en el botón para más información!</p>
+            </div>
+            <button class="boton-comic" id="boton-cambio" >Click me!</button>
+        </section>
+        <section class="personajes">
+            <div>
+                <a href=""><img src="./IMG/tanjiro.jpg"></a>
+            </div>
+            <div>
+                <a href=""><img src="./IMG/demonios.jpg"></a>
+                
+            </div>
+        </section>
+        <section class="combat-styles">
+            <div></div>
+        </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2025 Kimetsu no Yaiba Fansite</p>
+        <p>Desarrollado por <strong>Karolain Reyes</strong></p> 
+        <p><a href="/contact">Contacto</a></p>
+    </footer>
     <script src="/main.js"></script>
 </body>
+
 </html>
