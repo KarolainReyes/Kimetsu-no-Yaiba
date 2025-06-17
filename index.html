@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kimetsu no Yaiba</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
+    <title>Kimetsu no Yaiba Wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
 
-<body class="pag-inicio">
-    <nav class="navbar">
-        <ul class="navbar-lista">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/personajes">Personajes</a></li>
-            <li><a href="/capitulos">Capítulos</a></li>
-        </ul>
-    </nav>
-    <!--PAGINA DE INICIO-->
-    <main>
-        <section class="pagina-inicio">
-            <div class="contenido-principal">
-                <h1 class="titulo-inicio">Bienvenido a Kimetsu no Yaiba</h1>
-                <p>Explora el mundo de Kimetsu no Yaiba, conoce a los personajes y descubre los capítulos de la serie.
-                </p>
-                <img class="imagen-principal" id="imagen-principal"
-                src="/IMG/demon-slayer-anime-kimetsu-no-yaiba-vy37autfo82jvft7.jpg" alt="">
-                <p>¡Haz clic en el botón para más información!</p>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Kimetsu Wiki</a>
             </div>
-            <button class="boton-comic" id="boton-cambio" >Click me!</button>
-        </section>
-        <section class="personajes">
-            <div>
-                <a href=""><img src="./IMG/tanjiro.jpg"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#species">Especies</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div>
-                <a href=""><img src="./IMG/demonios.jpg"></a>
-                
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="https://wallpapers.com/images/hd/kimetsu-no-yaiba-wide-pbtkxfk310i7r054.jpg" alt="Kimetsu no Yaiba Image 1">
             </div>
-        </section>
-        <section class="combat-styles">
-            <div></div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2025 Kimetsu no Yaiba Fansite</p>
-        <p>Desarrollado por <strong>Karolain Reyes</strong></p> 
-        <p><a href="/contact">Contacto</a></p>
+            <div class="carousel-slide fade">
+                <img src="https://images.alphacoders.com/109/thumb-1920-1090333.jpg" alt="Kimetsu no Yaiba Image 2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://images3.alphacoders.com/111/thumb-1920-1111075.jpg" alt="Kimetsu no Yaiba Image 3">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://images5.alphacoders.com/109/thumb-1920-1090623.jpg" alt="Kimetsu no Yaiba Image 4">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dots-container">
+                </div>
+        </div>
+
+        <div class="synopsis-content">
+            <h1>Kimetsu no Yaiba</h1>
+            <p>Sumérgete en el mundo de los Cazadores de Demonios, las Doce Lunas Demoniacas, los Pilares y descubre todos los secretos de este fascinante universo.</p>
+            <a href="#species" class="btn-explore">Explorar Personajes</a>
+        </div>
+    </section>
+
+    <section id="species" class="species-section">
+        <h2>Especies</h2>
+        <div class="filter-container">
+            <input type="text" id="characterSearch" placeholder="Buscar personaje por nombre...">
+            <select id="speciesFilter">
+                <option value="all">Todas las Especies</option>
+                <option value="human">Humanos</option>
+                <option value="demon">Demonios</option>
+            </select>
+            <button id="resetFilter">Resetear Filtro</button>
+        </div>
+        <div class="characters-grid" id="charactersGrid">
+            <p>Cargando personajes...</p>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna sugerencia, no dudes en contactarnos.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu Nombre">
+            <input type="email" placeholder="Tu Email">
+            <textarea placeholder="Tu Mensaje"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Kimetsu no Yaiba. Todos los derechos reservados. Creado con ❤️ por Karolain Reyes.</p>
     </footer>
-    <script src="/main.js"></script>
-</body>
 
+    <script src="js/main.js"></script>
+    </body>
 </html>
