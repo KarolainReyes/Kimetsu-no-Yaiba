@@ -91,3 +91,122 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // --- Smooth Scroll para los enlaces de navegación ---
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Previene el comportamiento por defecto del enlace
+
+            const targetId = this.getAttribute('href'); // Obtiene el ID del destino
+            const targetElement = document.querySelector(targetId); // Selecciona el elemento de destino
+
+            if (targetElement) {
+                // Calcula la posición para el scroll, ajustando para el header fijo
+                const headerOffset = document.querySelector('.main-header').offsetHeight; // Altura del header
+                const elementPosition = targetElement.getBoundingClientRect().top; // Posición del elemento relativa al viewport
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset; // Posición absoluta ajustada
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth" // Hace el scroll suave
+                });
+
+                // Añade/quita clase 'active' para indicar la sección actual (opcional)
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            }
+        });
+    });
+
+    // --- Carga de Personajes desde la API y Funcionalidad de Búsqueda/Filtro ---
+    const charactersGrid = document.getElementById('charactersGrid');
+    const characterSearchInput = document.getElementById('characterSearch');
+    const speciesFilterSelect = document.getElementById('speciesFilter');
+    const resetFilterButton = document.getElementById('resetFilter');
+    let allCharacters = []; // Almacenará todos los personajes para el filtrado
+
+    // Función para obtener personajes de la API
+    const fetchCharacters = async () => {
+        try {
+            // Muestra un mensaje de carga
+            charactersGrid.innerHTML = '<p>Cargando personajes...</p>';
+            const response = await fetch('https://www.demonslayer-api.com/api/v1/characters');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            allCharacters = data.characters; // Guarda todos los personajes
+            displayCharacters(allCharacters); // Muestra todos los personajes inicialmente
+        } catch (error) {
+            console.error('Error al obtener los personajes:', error);
+            charactersGrid.innerHTML = '<p class="error-message">No se pudieron cargar los personajes. Inténtalo de nuevo más tarde.</p>';
+        }
+    };
+
+    // Función para mostrar personajes en la cuadrícula
+    const displayCharacters = (characters) => {
+        charactersGrid.innerHTML = ''; // Limpia el contenido actual
+
+        if (characters.length === 0) {
+            charactersGrid.innerHTML = '<p>No se encontraron personajes que coincidan con tu búsqueda.</p>';
+            return;
+        }
+
+        characters.forEach(character => {
+            const characterCard = document.createElement('div');
+            characterCard.classList.add('character-card');
+
+            // Usa una imagen de placeholder si image_url es nulo o vacío
+            const imageUrl = character.image_url || 'https://placehold.co/300x250/334155/E2E8F0?text=No+Image';
+
+            characterCard.innerHTML = `
+                <img src="${imageUrl}" alt="${character.name}" onerror="this.onerror=null;this.src='https://placehold.co/300x250/334155/E2E8F0?text=No+Image';">
+                <div class="character-info">
+                    <h3>${character.name}</h3>
+                    <p><strong>Especie:</strong> ${character.race || 'Desconocida'}</p>
+                    <p><strong>Edad:</strong> ${character.age || 'Desconocida'}</p> <!-- ¡Campo de edad añadido aquí! -->
+                    <p><strong>Afiliación:</strong> ${character.affiliation || 'Desconocida'}</p>
+                </div>
+            `;
+            charactersGrid.appendChild(characterCard);
+        });
+    };
+
+    // Función para filtrar y buscar personajes
+    const filterAndSearchCharacters = () => {
+        const searchTerm = characterSearchInput.value.toLowerCase();
+        const selectedSpecies = speciesFilterSelect.value;
+
+        const filteredCharacters = allCharacters.filter(character => {
+            const matchesSearch = character.name.toLowerCase().includes(searchTerm);
+            // La API devuelve "Human" y "Demon" (con mayúscula inicial), por eso convertimos a minúscula para la comparación
+            const matchesSpecies = selectedSpecies === 'all' || (character.race && character.race.toLowerCase() === selectedSpecies);
+            return matchesSearch && matchesSpecies;
+        });
+
+        displayCharacters(filteredCharacters);
+    };
+
+    // Escucha eventos de entrada en la barra de búsqueda y el selector de especies
+    if (characterSearchInput) {
+        characterSearchInput.addEventListener('input', filterAndSearchCharacters);
+    }
+    if (speciesFilterSelect) {
+        speciesFilterSelect.addEventListener('change', filterAndSearchCharacters);
+    }
+
+    // Escucha el botón de reset
+    if (resetFilterButton) {
+        resetFilterButton.addEventListener('click', () => {
+            characterSearchInput.value = ''; // Limpia el campo de búsqueda
+            speciesFilterSelect.value = 'all'; // Restablece el filtro de especies
+            displayCharacters(allCharacters); // Muestra todos los personajes
+        });
+    }
+
+    // Carga los personajes al iniciar la página
+    fetchCharacters();
+
+});
