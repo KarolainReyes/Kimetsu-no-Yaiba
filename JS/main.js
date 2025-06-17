@@ -70,3 +70,24 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlides(slideIndex);
     }
 
+
+    // --- Funcionalidad del Menú Hamburguesa (para móviles) ---
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (burgerMenu && navLinks) {
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            burgerMenu.classList.toggle('open'); // Añade/quita clase para la animación del ícono
+        });
+
+        // Cierra el menú cuando se hace clic en un enlace (en móviles)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    navLinks.classList.remove('open');
+                    burgerMenu.classList.remove('open');
+                }
+            });
+        });
+    }
