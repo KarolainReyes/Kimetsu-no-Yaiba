@@ -161,15 +161,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Usa una imagen de placeholder si image_url es nulo o vacío
             const imageUrl = character.image_url || 'https://placehold.co/300x250/334155/E2E8F0?text=No+Image';
 
-            characterCard.innerHTML = `
+            characterCard.innerHTML = {
                 <img src="${imageUrl}" alt="${character.name}" onerror="this.onerror=null;this.src='https://placehold.co/300x250/334155/E2E8F0?text=No+Image';">
                 <div class="character-info">
                     <h3>${character.name}</h3>
                     <p><strong>Especie:</strong> ${character.race || 'Desconocida'}</p>
-                    <p><strong>Edad:</strong> ${character.age || 'Desconocida'}</p> <!-- ¡Campo de edad añadido aquí! -->
+                    <p><strong>Edad:</strong> ${character.age || 'Desconocida'}</p>
                     <p><strong>Afiliación:</strong> ${character.affiliation || 'Desconocida'}</p>
                 </div>
-            `;
+            ;
             charactersGrid.appendChild(characterCard);
         });
     };

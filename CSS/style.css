@@ -1,24 +1,22 @@
-/* Importa la fuente Inter de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Reseteo básico y estilos generales */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0f172a; /* Azul oscuro casi negro para el fondo */
-    color: #cbd5e1; /* Gris claro para el texto */
+    background-color: #131e36; 
+    color: #cbd5e1; 
     line-height: 1.6;
-    scroll-behavior: smooth; /* Desplazamiento suave para los enlaces ancla */
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    scroll-behavior: smooth; 
+    overflow-x: hidden; 
 }
 
 /* Encabezado y Barra de Navegación */
 .main-header {
-    background-color: #1a202c; /* Un tono un poco más claro que el fondo */
+    background-color: #0d1c3a; 
     padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 4px 6px rgba(166, 172, 255, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,7 +33,7 @@ body {
 }
 
 .logo a {
-    color: #ef4444; /* Rojo vibrante para el logo */
+    color: #d32323; 
     font-size: 1.8rem;
     font-weight: 700;
     text-decoration: none;
@@ -43,7 +41,7 @@ body {
 }
 
 .logo a:hover {
-    color: #dc2626; /* Rojo más oscuro al pasar el ratón */
+    color: #631a1a; 
 }
 
 .nav-links {
@@ -89,13 +87,13 @@ body {
 
 /* Menú Hamburguesa (para móviles) */
 .burger-menu {
-    display: none; /* Oculto por defecto en desktop */
+    display: none; 
     cursor: pointer;
     flex-direction: column;
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    position: relative; /* Para animaciones */
+    position: relative; 
 }
 
 .burger-menu div {
@@ -122,42 +120,42 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Altura mínima de la ventana */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Cambiado a columna para apilar carrusel y sinopsis */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-    overflow: hidden; /* Oculta cualquier desbordamiento del carrusel */
+    overflow: hidden; 
 }
 
 /* Contenedor del Carrusel */
 .carousel-container {
-    position: absolute; /* Para que ocupe el fondo */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1; /* Detrás del contenido de sinopsis */
+    z-index: 1; 
 }
 
 .carousel-slide {
-    display: none; /* Oculto por defecto, JS mostrará uno a la vez */
+    display: none; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    animation: fadeIn 1s ease-in-out; /* Animación de fade */
+    animation: fadeIn 1s ease-in-out; 
 }
 
 .carousel-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cubre el área sin distorsionar */
-    filter: brightness(0.4); /* Oscurece la imagen para que el texto resalte */
+    object-fit: cover; 
+    filter: brightness(0.4); 
 }
 
 /* Animación de fade para el carrusel */
@@ -180,7 +178,7 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    z-index: 5; /* Por encima de las imágenes */
+    z-index: 5; 
 }
 
 .next {
@@ -199,14 +197,14 @@ body {
 /* Contenido de la Sinopsis */
 .synopsis-content {
     position: relative;
-    z-index: 10; /* Por encima del carrusel */
+    z-index: 10; 
     max-width: 800px;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
-    border-radius: 15px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 15px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin: 2rem;
-    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    backdrop-filter: blur(5px); 
 }
 
 .synopsis-content h1 {
@@ -246,12 +244,12 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    background-color: #1e293b; /* Un gris azulado para las secciones */
-    border-radius: 15px; /* Bordes redondeados */
+    background-color: #1e293b; 
+    border-radius: 15px; 
     margin-top: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: #f8fafc; /* Color de texto más claro para el contraste */
+    color: #f8fafc; 
 }
 
 section h2 {
@@ -269,7 +267,7 @@ section h2 {
 
 .filter-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
@@ -284,7 +282,7 @@ section h2 {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    outline: none; /* Elimina el contorno al enfocar */
+    outline: none; 
 }
 
 .filter-container input::placeholder {
@@ -298,7 +296,7 @@ section h2 {
 }
 
 .filter-container button {
-    background-color: #3b82f6; /* Azul para el botón de reset */
+    background-color: #3b82f6; 
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -316,10 +314,10 @@ section h2 {
 
 .characters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 2rem;
     margin-top: 2rem;
-    justify-content: center; /* Centra los elementos si no llenan una fila */
+    justify-content: center; 
 }
 
 .character-card {
@@ -339,7 +337,7 @@ section h2 {
 
 .character-card img {
     width: 100%;
-    height: 250px; /* Altura fija para las imágenes de los personajes */
+    height: 250px; 
     object-fit: cover;
     display: block;
     border-bottom: 1px solid #475569;
@@ -354,9 +352,9 @@ section h2 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     color: #ef4444;
-    white-space: nowrap; /* Evita que el texto se rompa */
-    overflow: hidden; /* Oculta el desbordamiento */
-    text-overflow: ellipsis; /* Añade puntos suspensivos */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .character-info p {
@@ -367,7 +365,7 @@ section h2 {
 
 /* Sección de Contacto */
 .contact-section {
-    text-align: left; /* Alinea el texto a la izquierda en estas secciones */
+    text-align: left; 
 }
 
 .contact-form {
@@ -447,13 +445,13 @@ section h2 {
     }
 
     .nav-links {
-        display: none; /* Oculta los enlaces por defecto */
+        display: none; 
         flex-direction: column;
         width: 100%;
         text-align: center;
         background-color: #1a202c;
         position: absolute;
-        top: 60px; /* Debajo del header */
+        top: 60px; 
         left: 0;
         padding: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -461,7 +459,7 @@ section h2 {
     }
 
     .nav-links.open {
-        display: flex; /* Muestra los enlaces cuando el menú está abierto */
+        display: flex; 
     }
 
     .nav-links li {
@@ -481,9 +479,9 @@ section h2 {
     }
 
     .hero-section {
-        min-height: 80vh; /* Ajusta la altura en móviles */
-        justify-content: flex-end; /* Alinea el contenido más hacia abajo */
-        padding-bottom: 2rem; /* Añade un poco de padding inferior */
+        min-height: 80vh; 
+        justify-content: flex-end; 
+        padding-bottom: 2rem; 
     }
 
     .carousel-container {
@@ -495,24 +493,24 @@ section h2 {
     }
 
     .synopsis-content {
-        margin: 1rem; /* Reduce el margen en pantallas pequeñas */
+        margin: 1rem; 
         padding: 1.5rem;
     }
 
     .filter-container {
-        flex-direction: column; /* Apila los elementos de filtro */
+        flex-direction: column; 
         align-items: center;
     }
 
     .filter-container input,
     .filter-container select,
     .filter-container button {
-        width: 90%; /* Ajusta el ancho */
+        width: 90%; 
         max-width: 300px;
     }
 
     .characters-grid {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        grid-template-columns: 1fr; 
     }
 
     section {
