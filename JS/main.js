@@ -153,8 +153,57 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const entradaPersonaje = document.getElementById("characterSearch");
     entradaPersonaje.addEventListener("input", filtrado);
-    filtroRaza.addEventListener("change",()=>{entradaPersonaje.value=""})
+    filtroRaza.addEventListener("change",()=>{entradaPersonaje.value="";
+       {    
+        
+        switch (filtroRaza.value) {
+                case "human":
+                    console.log(entradaPersonaje.value)
+                    personajesDiv.innerHTML = "";
+                    let entradaPers = String(entradaPersonaje.value).toLowerCase();
+                    humanos.forEach(personaje => {  
+                        let personajeName = personaje.name.toLowerCase();
+                        console.log(personajeName)
+                        if (personajeName.includes(entradaPers)) {
+                            
+                            let divPersonajeFiltrado = document.createElement("div");
+                            divPersonajeFiltrado.classList.add("character-card");
+                            divPersonajeFiltrado.innerHTML = `<h2>${personaje.name}</h2>
+                                                                       <img src="${personaje.img}">                          
+                                                                         <p>Edad: ${personaje.age}</p>
+                                                                       <p>Raza: ${personaje.race}</p>
+                                                                       <p>"${personaje.quote}"</p>`;
+                            personajesDiv.appendChild(divPersonajeFiltrado);
+                        }
+                    });
+                    break;
+                case "demon":
+                    console.log(entradaPersonaje.value)
+                    personajesDiv.innerHTML = "";
+                    let entradaPerss = String(entradaPersonaje.value).toLowerCase();
+                    demonios.forEach(personaje => {  
+                        let personajeName = personaje.name.toLowerCase();
+                        console.log(personajeName)
+                        if (personajeName.includes(entradaPerss)) {
+                            
+                            let divPersonajeFiltrado = document.createElement("div");
+                            divPersonajeFiltrado.classList.add("character-card");
+                            divPersonajeFiltrado.innerHTML = `<h2>${personaje.name}</h2>
+                                                                       <img src="${personaje.img}">                          
+                                                                         <p>Edad: ${personaje.age}</p>
+                                                                       <p>Raza: ${personaje.race}</p>
+                                                                       <p>"${personaje.quote}"</p>`;
+                            personajesDiv.appendChild(divPersonajeFiltrado);
+                        }
+                    });
+                    break;
+                default:
+                    break;
+            }
+        }
     
+    })
+
     function filtrado() {
         switch (filtroRaza.value) {
             case "all":
