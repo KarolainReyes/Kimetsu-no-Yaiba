@@ -120,93 +120,244 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Carga de Personajes desde la API y Funcionalidad de Búsqueda/Filtro ---
-    const charactersGrid = document.getElementById('charactersGrid');
-    const characterSearchInput = document.getElementById('characterSearch');
-    const speciesFilterSelect = document.getElementById('speciesFilter');
-    const resetFilterButton = document.getElementById('resetFilter');
-    let allCharacters = []; // Almacenará todos los personajes para el filtrado
+    const personajesDiv = document.getElementById("charactersGrid");
 
-    // Función para obtener personajes de la API
-    const fetchCharacters = async () => {
-        try {
-            // Muestra un mensaje de carga
-            charactersGrid.innerHTML = '<p>Cargando personajes...</p>';
-            const response = await fetch('https://www.demonslayer-api.com/api/v1/characters');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+    let listaPersonajes = [];
+    let demonios = [];
+    let humanos = [];
+    fetch("./JS/list.json").then(response => { return response.json() }).then(data => { listaPersonajes = data; })
+    setTimeout(() => {
+        console.log(listaPersonajes);
+        listaPersonajes.forEach(personaje => {
+            if (personaje.race.includes("Humano")) {
+                humanos.push(personaje);
             }
-            const data = await response.json();
-            allCharacters = data.characters; // Guarda todos los personajes
-            displayCharacters(allCharacters); // Muestra todos los personajes inicialmente
-        } catch (error) {
-            console.error('Error al obtener los personajes:', error);
-            charactersGrid.innerHTML = '<p class="error-message">No se pudieron cargar los personajes. Inténtalo de nuevo más tarde.</p>';
+            else {
+                demonios.push(personaje);
+            }
+
+
+        });
+
+
+
+
+
+
+
+
+
+    }, 2000);
+
+    const filtroRaza = document.getElementById("speciesFilter");
+    
+    const entradaPersonaje = document.getElementById("characterSearch");
+    entradaPersonaje.addEventListener("input", filtrado);
+    filtroRaza.addEventListener("change",()=>{entradaPersonaje.value=""})
+    
+    function filtrado() {
+        switch (filtroRaza.value) {
+            case "all":
+                console.log(entradaPersonaje.value)
+                personajesDiv.innerHTML = "";
+                let entradaPer = String(entradaPersonaje.value).toLowerCase();
+                listaPersonajes.forEach(personaje => {  
+                    let personajeName = personaje.name.toLowerCase();
+                    console.log(personajeName)
+                    if (personajeName.includes(entradaPer)) {
+                        
+                        let divPersonajeFiltrado = document.createElement("div");
+                        divPersonajeFiltrado.classList.add("character-card");
+                        divPersonajeFiltrado.innerHTML = `<h2>${personaje.name}</h2>
+                                                                   <img src="${personaje.img}">                          
+                                                                     <p>Edad: ${personaje.age}</p>
+                                                                   <p>Raza: ${personaje.race}</p>
+                                                                   <p>"${personaje.quote}"</p>`;
+                        personajesDiv.appendChild(divPersonajeFiltrado);
+                    }
+                });
+                break;
+            case "human":
+                console.log(entradaPersonaje.value)
+                personajesDiv.innerHTML = "";
+                let entradaPers = String(entradaPersonaje.value).toLowerCase();
+                humanos.forEach(personaje => {  
+                    let personajeName = personaje.name.toLowerCase();
+                    console.log(personajeName)
+                    if (personajeName.includes(entradaPers)) {
+                        
+                        let divPersonajeFiltrado = document.createElement("div");
+                        divPersonajeFiltrado.classList.add("character-card");
+                        divPersonajeFiltrado.innerHTML = `<h2>${personaje.name}</h2>
+                                                                   <img src="${personaje.img}">                          
+                                                                     <p>Edad: ${personaje.age}</p>
+                                                                   <p>Raza: ${personaje.race}</p>
+                                                                   <p>"${personaje.quote}"</p>`;
+                        personajesDiv.appendChild(divPersonajeFiltrado);
+                    }
+                });
+                break;
+            case "demon":
+                console.log(entradaPersonaje.value)
+                personajesDiv.innerHTML = "";
+                let entradaPerss = String(entradaPersonaje.value).toLowerCase();
+                demonios.forEach(personaje => {  
+                    let personajeName = personaje.name.toLowerCase();
+                    console.log(personajeName)
+                    if (personajeName.includes(entradaPerss)) {
+                        
+                        let divPersonajeFiltrado = document.createElement("div");
+                        divPersonajeFiltrado.classList.add("character-card");
+                        divPersonajeFiltrado.innerHTML = `<h2>${personaje.name}</h2>
+                                                                   <img src="${personaje.img}">                          
+                                                                     <p>Edad: ${personaje.age}</p>
+                                                                   <p>Raza: ${personaje.race}</p>
+                                                                   <p>"${personaje.quote}"</p>`;
+                        personajesDiv.appendChild(divPersonajeFiltrado);
+                    }
+                });
+                break;
+            default:
+                break;
         }
-    };
-
-    // Función para mostrar personajes en la cuadrícula
-    const displayCharacters = (characters) => {
-        charactersGrid.innerHTML = ''; // Limpia el contenido actual
-
-        if (characters.length === 0) {
-            charactersGrid.innerHTML = '<p>No se encontraron personajes que coincidan con tu búsqueda.</p>';
-            return;
-        }
-
-        characters.forEach(character => {
-            const characterCard = document.createElement('div');
-            characterCard.classList.add('character-card');
-
-            // Usa una imagen de placeholder si image_url es nulo o vacío
-            const imageUrl = character.image_url || 'https://placehold.co/300x250/334155/E2E8F0?text=No+Image';
-
-            characterCard.innerHTML = {
-                <img src="${imageUrl}" alt="${character.name}" onerror="this.onerror=null;this.src='https://placehold.co/300x250/334155/E2E8F0?text=No+Image';">
-                <div class="character-info">
-                    <h3>${character.name}</h3>
-                    <p><strong>Especie:</strong> ${character.race || 'Desconocida'}</p>
-                    <p><strong>Edad:</strong> ${character.age || 'Desconocida'}</p>
-                    <p><strong>Afiliación:</strong> ${character.affiliation || 'Desconocida'}</p>
-                </div>
-            ;
-            charactersGrid.appendChild(characterCard);
-        });
-    };
-
-    // Función para filtrar y buscar personajes
-    const filterAndSearchCharacters = () => {
-        const searchTerm = characterSearchInput.value.toLowerCase();
-        const selectedSpecies = speciesFilterSelect.value;
-
-        const filteredCharacters = allCharacters.filter(character => {
-            const matchesSearch = character.name.toLowerCase().includes(searchTerm);
-            // La API devuelve "Human" y "Demon" (con mayúscula inicial), por eso convertimos a minúscula para la comparación
-            const matchesSpecies = selectedSpecies === 'all' || (character.race && character.race.toLowerCase() === selectedSpecies);
-            return matchesSearch && matchesSpecies;
-        });
-
-        displayCharacters(filteredCharacters);
-    };
-
-    // Escucha eventos de entrada en la barra de búsqueda y el selector de especies
-    if (characterSearchInput) {
-        characterSearchInput.addEventListener('input', filterAndSearchCharacters);
-    }
-    if (speciesFilterSelect) {
-        speciesFilterSelect.addEventListener('change', filterAndSearchCharacters);
     }
 
-    // Escucha el botón de reset
-    if (resetFilterButton) {
-        resetFilterButton.addEventListener('click', () => {
-            characterSearchInput.value = ''; // Limpia el campo de búsqueda
-            speciesFilterSelect.value = 'all'; // Restablece el filtro de especies
-            displayCharacters(allCharacters); // Muestra todos los personajes
-        });
-    }
 
-    // Carga los personajes al iniciar la página
-    fetchCharacters();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     // --- Carga de Personajes desde la API y Funcionalidad de Búsqueda/Filtro ---
+    //     const charactersGrid = document.getElementById('charactersGrid');
+    //     const characterSearchInput = document.getElementById('characterSearch');
+    //     const speciesFilterSelect = document.getElementById('speciesFilter');
+    //     const resetFilterButton = document.getElementById('resetFilter');
+    //     let allCharacters = []; // Almacenará todos los personajes para el filtrado
+
+    //     // Función para obtener personajes de la API
+    //     const fetchCharacters = async () => {
+    //         try {
+    //             // Muestra un mensaje de carga
+    //             charactersGrid.innerHTML = '<p>Cargando personajes...</p>';
+    //             const response = await fetch('https://www.demonslayer-api.com/api/v1/characters');
+    //             if (!response.ok) {
+    //                 throw new Error(`HTTP error! status: ${response.status}`);
+    //             }
+    //             const data = await response.json();
+    //             allCharacters = data.characters; // Guarda todos los personajes
+    //             displayCharacters(allCharacters); // Muestra todos los personajes inicialmente
+    //         } catch (error) {
+    //             console.error('Error al obtener los personajes:', error);
+    //             charactersGrid.innerHTML = '<p class="error-message">No se pudieron cargar los personajes. Inténtalo de nuevo más tarde.</p>';
+    //         }
+    //     };
+
+    //     // Función para mostrar personajes en la cuadrícula
+    //     const displayCharacters = (characters) => {
+    //         charactersGrid.innerHTML = ''; // Limpia el contenido actual
+
+    //         if (characters.length === 0) {
+    //             charactersGrid.innerHTML = '<p>No se encontraron personajes que coincidan con tu búsqueda.</p>';
+    //             return;
+    //         }
+
+    //         characters.forEach(character => {
+    //             const characterCard = document.createElement('div');
+    //             characterCard.classList.add('character-card');
+
+    //             // Usa una imagen de placeholder si image_url es nulo o vacío
+    //             const imageUrl = character.image_url || 'https://placehold.co/300x250/334155/E2E8F0?text=No+Image';
+
+    //             characterCard.innerHTML = {
+    //                 <img src="${imageUrl}" alt="${character.name}" onerror="this.onerror=null;this.src='https://placehold.co/300x250/334155/E2E8F0?text=No+Image';">
+    //                 <div class="character-info">
+    //                     <h3>${character.name}</h3>
+    //                     <p><strong>Especie:</strong> ${character.race || 'Desconocida'}</p>
+    //                     <p><strong>Edad:</strong> ${character.age || 'Desconocida'}</p>
+    //                     <p><strong>Afiliación:</strong> ${character.affiliation || 'Desconocida'}</p>
+    //                 </div>
+    //             ;
+    //             charactersGrid.appendChild(characterCard);
+    //         });
+    //     };
+
+    //     // Función para filtrar y buscar personajes
+    //     const filterAndSearchCharacters = () => {
+    //         const searchTerm = characterSearchInput.value.toLowerCase();
+    //         const selectedSpecies = speciesFilterSelect.value;
+
+    //         const filteredCharacters = allCharacters.filter(character => {
+    //             const matchesSearch = character.name.toLowerCase().includes(searchTerm);
+    //             // La API devuelve "Human" y "Demon" (con mayúscula inicial), por eso convertimos a minúscula para la comparación
+    //             const matchesSpecies = selectedSpecies === 'all' || (character.race && character.race.toLowerCase() === selectedSpecies);
+    //             return matchesSearch && matchesSpecies;
+    //         });
+
+    //         displayCharacters(filteredCharacters);
+    //     };
+
+    //     // Escucha eventos de entrada en la barra de búsqueda y el selector de especies
+    //     if (characterSearchInput) {
+    //         characterSearchInput.addEventListener('input', filterAndSearchCharacters);
+    //     }
+    //     if (speciesFilterSelect) {
+    //         speciesFilterSelect.addEventListener('change', filterAndSearchCharacters);
+    //     }
+
+    //     // Escucha el botón de reset
+    //     if (resetFilterButton) {
+    //         resetFilterButton.addEventListener('click', () => {
+    //             characterSearchInput.value = ''; // Limpia el campo de búsqueda
+    //             speciesFilterSelect.value = 'all'; // Restablece el filtro de especies
+    //             displayCharacters(allCharacters); // Muestra todos los personajes
+    //         });
+    //     }
+
+    //     // Carga los personajes al iniciar la página
+    //     fetchCharacters();
+
+
+
+
+
 
 });

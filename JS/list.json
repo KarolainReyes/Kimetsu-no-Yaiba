@@ -1,0 +1,1135 @@
+[
+    {
+      "id": 1,
+      "name": "Tanjiro Kamado",
+      "age": 16,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Es el protagonista principal de Demon Slayer. Se unió al Cuerpo de Exterminadores de Demonios para encontrar una cura que devuelva a su hermana, Nezuko Kamado, a su forma humana y para cazar y matar demonios.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/1.webp",
+      "quote": "¡Trabaja en ello. Todo lo que puedo hacer es trabajar duro! ¡Esa es la historia de mi vida!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "El primer arco de la serie, que se centra en el camino de Tanjiro Kamado después de que su familia fuera masacrada. El arco termina después de que él aprueba la prueba de Selección Final y recibe su espada Nichirin."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "Los Exterminadores de Demonios son miembros del Cuerpo de Exterminadores de Demonios cuyo principal trabajo es cazar y matar demonios."
+      },
+      "combat_style": [
+        {
+          "id": 1,
+          "name": "Respiración Solar",
+          "description": "Estilo de Respiración conocido y enseñado únicamente por la familia Kamado, revelado más tarde como el primer Estilo de Respiración.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/sun-breathing.webp"
+        },
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "La Respiración del Agua es uno de los cinco estilos principales de respiración derivados directamente de la Respiración Solar.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nezuko Kamado",
+      "age": 14,
+      "gender": "Femenino",
+      "race": "Demonio",
+      "description": "La hermana menor de Tanjiro y la única sobreviviente de su familia junto a él. Fue convertida en demonio pero conserva gran parte de su conciencia humana.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/2.webp",
+      "quote": "¡Protegeré a mi hermano!",
+      "first_arc_appearance": {
+        "name": "Crueldad",
+        "description": "El comienzo de la serie donde Nezuko es convertida en demonio."
+      },
+      "affiliation": {
+        "name": "Familia Kamado",
+        "description": "Nezuko, a pesar de ser un demonio, viaja con su hermano Tanjiro y es protegida por el Cuerpo de Exterminadores de Demonios debido a su naturaleza única."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Habilidades demoníacas únicas para cada demonio. La de Nezuko le permite encender su sangre.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Zenitsu Agatsuma",
+      "age": 16,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Uno de los compañeros de viaje de Tanjiro y también Exterminador de Demonios. Es un cobarde, pero se vuelve increíblemente fuerte cuando está inconsciente.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/3.webp",
+      "quote": "¡Quiero vivir una vida feliz!",
+      "first_arc_appearance": {
+        "name": "Arco del Demonio del Pantano",
+        "description": "Tanjiro encuentra a Zenitsu por primera vez."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "Un miembro del Cuerpo de Exterminadores de Demonios, entrenado por un antiguo Hashira del Trueno."
+      },
+      "combat_style": [
+        {
+          "id": 4,
+          "name": "Respiración del Trueno",
+          "description": "Uno de los cinco estilos principales de respiración derivados directamente de la Respiración Solar. Zenitsu solo dominó la primera forma.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/thunder-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Inosuke Hashibira",
+      "age": 15,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Otro de los compañeros de viaje de Tanjiro. Fue criado por jabalíes y tiene una personalidad salvaje y agresiva, a menudo desafiando a otros a pelear.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/4.webp",
+      "quote": "¡Los cerdos no piensan! ¡Solo actúan!",
+      "first_arc_appearance": {
+        "name": "Arco de la Casa del Tambor",
+        "description": "Inosuke hace su primera aparición durante la búsqueda del demonio dentro de la Casa del Tambor."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "Un miembro salvaje del Cuerpo de Exterminadores de Demonios, conocido por su estilo de Respiración de la Bestia."
+      },
+      "combat_style": [
+        {
+          "id": 5,
+          "name": "Respiración de la Bestia",
+          "description": "Un estilo de respiración único desarrollado por Inosuke, que imita los movimientos y sentidos animalistas.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/beast-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Giyu Tomioka",
+      "age": 21,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira del Agua del Cuerpo de Exterminadores de Demonios. Es serio y reservado, a menudo parece distante.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/5.webp",
+      "quote": "Nunca te rindas. Aunque sea doloroso, aunque sea agonizante, no intentes tomar el camino fácil.",
+      "first_arc_appearance": {
+        "name": "Crueldad",
+        "description": "Encontrado por primera vez por Tanjiro cuando Nezuko se convierte en demonio."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira del Agua, uno de los Exterminadores de Demonios más fuertes."
+      },
+      "combat_style": [
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "Maestro de la Respiración del Agua, capaz de utilizar todas sus formas.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Shinobu Kocho",
+      "age": 18,
+      "gender": "Femenino",
+      "race": "Humano",
+      "description": "La Hashira del Insecto del Cuerpo de Exterminadores de Demonios. Siempre está sonriendo, pero guarda un profundo odio por los demonios.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/6.webp",
+      "quote": "Soy la única que puede matar demonios con veneno.",
+      "first_arc_appearance": {
+        "name": "Arco del Monte Natagumo",
+        "description": "Introducida durante la misión de rescate en el Monte Natagumo."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "La actual Hashira del Insecto, especializada en el uso de veneno de glicina."
+      },
+      "combat_style": [
+        {
+          "id": 6,
+          "name": "Respiración del Insecto",
+          "description": "Un estilo de respiración único derivado de la Respiración Floral, centrado en ataques de estocada e inyección de veneno.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/insect-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kyojuro Rengoku",
+      "age": 20,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira de la Llama del Cuerpo de Exterminadores de Demonios. Es entusiasta, carismático y siempre optimista.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/7.webp",
+      "quote": "¡Enciende tu corazón!",
+      "first_arc_appearance": {
+        "name": "Arco del Tren Infinito",
+        "description": "La figura central del Arco del Tren Infinito, donde ayuda a Tanjiro y sus amigos."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El antiguo Hashira de la Llama, conocido por su increíble fuerza y espíritu inquebrantable."
+      },
+      "combat_style": [
+        {
+          "id": 7,
+          "name": "Respiración de la Llama",
+          "description": "Uno de los cinco estilos principales de respiración derivados directamente de la Respiración Solar.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/flame-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tengen Uzui",
+      "age": 23,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira del Sonido del Cuerpo de Exterminadores de Demonios. Es llamativo, extravagante y tiene tres esposas.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/8.webp",
+      "quote": "¡Soy un Dios de los Festivales!",
+      "first_arc_appearance": {
+        "name": "Arco del Distrito de Entretenimiento",
+        "description": "Recluta a Tanjiro, Zenitsu e Inosuke para que lo ayuden a encontrar a sus esposas en el Distrito de Yoshiwara."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira del Sonido, maestro del ninjutsu y el combate basado en el sonido."
+      },
+      "combat_style": [
+        {
+          "id": 8,
+          "name": "Respiración del Sonido",
+          "description": "Un estilo de respiración único derivado de la Respiración del Trueno, que se centra en la velocidad y la manipulación del sonido.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/sound-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Muichiro Tokito",
+      "age": 14,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira de la Niebla del Cuerpo de Exterminadores de Demonios. A menudo se le ve como despistado y olvidadizo, pero es un espadachín prodigioso.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/9.webp",
+      "quote": "Si lo olvidas, solo tienes que recordarlo.",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Juega un papel importante en el Arco de la Aldea de los Herreros."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira de la Niebla, un genio con poca memoria."
+      },
+      "combat_style": [
+        {
+          "id": 9,
+          "name": "Respiración de la Niebla",
+          "description": "Un estilo de respiración derivado de la Respiración del Viento, caracterizado por movimientos engañosos e impredecibles.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/mist-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mitsuri Kanroji",
+      "age": 19,
+      "gender": "Femenino",
+      "race": "Humano",
+      "description": "La Hashira del Amor del Cuerpo de Exterminadores de Demonios. Es alegre, afectuosa e increíblemente fuerte.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/10.webp",
+      "quote": "¡Quiero ser amada!",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Juega un papel importante en el Arco de la Aldea de los Herreros."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "La actual Hashira del Amor, conocida por su espada flexible y su estilo de respiración único."
+      },
+      "combat_style": [
+        {
+          "id": 10,
+          "name": "Respiración del Amor",
+          "description": "Un estilo de respiración único derivado de la Respiración de la Llama, que utiliza una espada flexible para crear ataques tipo látigo.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/love-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Obanai Iguro",
+      "age": 21,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira de la Serpiente del Cuerpo de Exterminadores de Demonios. Es estricto, reservado y a menudo se le ve con su serpiente, Kaburamaru.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/11.webp",
+      "quote": "Nunca perdonaré a los demonios.",
+      "first_arc_appearance": {
+        "name": "Arco de la Reunión de Hashira",
+        "description": "Introducido durante la reunión de Hashira sobre Tanjiro y Nezuko."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira de la Serpiente, conocido por su espada única y su estilo de lucha."
+      },
+      "combat_style": [
+        {
+          "id": 11,
+          "name": "Respiración de la Serpiente",
+          "description": "Un estilo de respiración único derivado de la Respiración del Agua, caracterizado por movimientos retorcidos y sinuosos.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/serpent-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Sanemi Shinazugawa",
+      "age": 21,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira del Viento del Cuerpo de Exterminadores de Demonios. Es agresivo, irascible y odia profundamente a los demonios.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/12.webp",
+      "quote": "¡Muere, demonio!",
+      "first_arc_appearance": {
+        "name": "Arco de la Reunión de Hashira",
+        "description": "Introducido durante la reunión de Hashira, mostrando su dura naturaleza hacia Nezuko."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira del Viento, un luchador poderoso e implacable."
+      },
+      "combat_style": [
+        {
+          "id": 12,
+          "name": "Respiración del Viento",
+          "description": "Uno de los cinco estilos principales de respiración derivados directamente de la Respiración Solar, caracterizado por ataques agresivos y de barrido.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/wind-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Gyomei Himejima",
+      "age": 27,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El Hashira de la Roca del Cuerpo de Exterminadores de Demonios. Es ciego, compasivo y el Hashira más fuerte.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/13.webp",
+      "quote": "Namu Amida Butsu.",
+      "first_arc_appearance": {
+        "name": "Arco de la Reunión de Hashira",
+        "description": "Introducido durante la reunión de Hashira."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "El actual Hashira de la Roca, venerado como el más fuerte entre los Hashira."
+      },
+      "combat_style": [
+        {
+          "id": 13,
+          "name": "Respiración de la Roca",
+          "description": "Uno de los cinco estilos principales de respiración derivados directamente de la Respiración Solar, que utiliza un mangual y un hacha.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/stone-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Kagaya Ubuyashiki",
+      "age": 23,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El 97º líder del Cuerpo de Exterminadores de Demonios, conocido como 'Oyakata-sama'. Es frágil, pero posee un gran carisma y previsión.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/14.webp",
+      "quote": "Acabaremos con Muzan.",
+      "first_arc_appearance": {
+        "name": "Arco de la Reunión de Hashira",
+        "description": "Introducido como el líder del Cuerpo de Exterminadores de Demonios."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios (Líder)",
+        "description": "El venerado líder del Cuerpo de Exterminadores de Demonios, que guía a sus miembros contra los demonios."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 15,
+      "name": "Muzan Kibutsuji",
+      "age": 1000,
+      "gender": "Masculino (aparente)",
+      "race": "Demonio",
+      "description": "El progenitor de todos los demonios y el principal antagonista de la serie. Es despiadado, inteligente y busca volverse verdaderamente inmortal.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/15.webp",
+      "quote": "Vuestras vidas no tienen sentido.",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Tanjiro encuentra a Muzan por primera vez en Asakusa."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Líder)",
+        "description": "El creador y líder de todos los demonios, que comanda las Doce Lunas Demoníacas."
+      },
+      "combat_style": [
+        {
+          "id": 14,
+          "name": "Habilidades Demoníacas",
+          "description": "Posee una amplia gama de devastadores poderes demoníacos, incluyendo la metamorfosis y la manipulación corporal.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/demonic-abilities.webp"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Kokushibo",
+      "age": 400,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Primera Luna Superior de las Doce Lunas Demoníacas. Anteriormente fue un Exterminador de Demonios humano y el hermano gemelo mayor de Yoriichi Tsugikuni.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/16.webp",
+      "quote": "Para perfeccionarse...",
+      "first_arc_appearance": {
+        "name": "Arco del Entrenamiento de Rehabilitación",
+        "description": "Mencionado y mostrado por primera vez durante la reunión de las Lunas Superiores."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Primera Luna Superior)",
+        "description": "El más fuerte de los subordinados directos de Muzan, un maestro espadachín incluso como demonio."
+      },
+      "combat_style": [
+        {
+          "id": 15,
+          "name": "Respiración Lunar",
+          "description": "Un estilo de respiración único desarrollado por el propio Kokushibo, mejorado por sus habilidades demoníacas.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/moon-breathing.webp"
+        },
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Genera cuchillas afiladas como navajas de su propia carne.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Doma",
+      "age": 133,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Segunda Luna Superior de las Doce Lunas Demoníacas. Es el líder del culto de la Fe del Paraíso Eterno y tiene una actitud tranquila, a menudo juguetona, a pesar de su crueldad.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/17.webp",
+      "quote": "Las emociones humanas son bastante intrigantes.",
+      "first_arc_appearance": {
+        "name": "Arco del Entrenamiento de Rehabilitación",
+        "description": "Aparece durante la reunión de las Lunas Superiores."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Segunda Luna Superior)",
+        "description": "Un demonio poderoso y sádico, solo superado por Kokushibo."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede generar y manipular hielo de su propia sangre.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Akaza",
+      "age": 133,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Tercera Luna Superior de las Doce Lunas Demoníacas. Desprecia a los débiles y busca volverse más fuerte, solo luchando contra oponentes fuertes.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/18.webp",
+      "quote": "¡Conviértete en demonio, Kyojuro!",
+      "first_arc_appearance": {
+        "name": "Arco del Tren Infinito",
+        "description": "Se involucra en una feroz batalla con Kyojuro Rengoku."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Tercera Luna Superior)",
+        "description": "Un demonio formidable con un fuerte espíritu de lucha."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Utiliza técnicas de artes marciales destructivas combinadas con ondas de choque y detección de aguja de brújula.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Hantengu",
+      "age": 200,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Cuarta Luna Superior de las Doce Lunas Demoníacas. Es un demonio cobarde que puede dividirse en múltiples manifestaciones de sus emociones.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/19.webp",
+      "quote": "¡Soy tan débil!",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Ataca la Aldea de los Herreros junto a Gyokko."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Cuarta Luna Superior)",
+        "description": "Un demonio único capaz de dividir su cuerpo y sus poderes."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Se divide en varios clones que representan sus emociones, cada uno con poderes únicos.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Gyokko",
+      "age": 113,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Quinta Luna Superior de las Doce Lunas Demoníacas. Es vanidoso y artístico, transformando a sus víctimas en grotescas obras de arte.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/20.webp",
+      "quote": "¡Mi arte es impecable!",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Ataca la Aldea de los Herreros junto a Hantengu."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Quinta Luna Superior)",
+        "description": "Un demonio con una apariencia inusual y poderes relacionados con jarrones."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Manipula el agua y genera criaturas parecidas a peces y jarrones mortales.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Gyutaro",
+      "age": 113,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Sexta Luna Superior de las Doce Lunas Demoníacas, compartiendo el rango con su hermana Daki. Es un demonio grotesco y que se odia a sí mismo, con cuchillas de sangre afiladas como guadañas.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/21.webp",
+      "quote": "Eres realmente feo.",
+      "first_arc_appearance": {
+        "name": "Arco del Distrito de Entretenimiento",
+        "description": "El verdadero antagonista del Arco del Distrito de Entretenimiento, revelado después de que Daki es inicialmente derrotada."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Sexta Luna Superior)",
+        "description": "Un poderoso demonio que lucha junto a su hermana, Daki."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Manipula su propia sangre para crear hoces venenosas y afiladas.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Daki",
+      "age": 113,
+      "gender": "Femenino",
+      "race": "Demonio",
+      "description": "Sexta Luna Superior de las Doce Lunas Demoníacas, compartiendo el rango con su hermano Gyutaro. Se hace pasar por una Oiran en el Distrito de Entretenimiento.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/22.webp",
+      "quote": "¡Soy tan hermosa!",
+      "first_arc_appearance": {
+        "name": "Arco del Distrito de Entretenimiento",
+        "description": "El demonio inicial encontrado en el Arco del Distrito de Entretenimiento."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Sexta Luna Superior)",
+        "description": "Un demonio que usa sus fajas en combate."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Manipula sus propias fajas con fines ofensivos y defensivos.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Enmu",
+      "age": 100,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Primera Luna Inferior de las Doce Lunas Demoníacas. Disfruta induciendo pesadillas y sufrimiento en los humanos.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/23.webp",
+      "quote": "Qué sonido tan agradable.",
+      "first_arc_appearance": {
+        "name": "Arco del Tren Infinito",
+        "description": "El principal antagonista del Arco del Tren Infinito."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Primera Luna Inferior)",
+        "description": "Un demonio con habilidades de manipulación de sueños."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede manipular sueños y fusionarse con objetos como trenes.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Rui",
+      "age": 100,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Quinta Luna Inferior de las Doce Lunas Demoníacas. Buscaba crear una 'familia' e infligía castigos severos a quienes no se adherían a sus retorcidos ideales.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/24.webp",
+      "quote": "Quiero una familia.",
+      "first_arc_appearance": {
+        "name": "Arco del Monte Natagumo",
+        "description": "El principal antagonista del Arco del Monte Natagumo."
+      },
+      "affiliation": {
+        "name": "Doce Lunas Demoníacas (Quinta Luna Inferior)",
+        "description": "Un demonio que usa hilos en la batalla."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede generar y manipular hilos de araña increíblemente afilados y duraderos.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Tamayo",
+      "age": 500,
+      "gender": "Femenino",
+      "race": "Demonio",
+      "description": "Una demonio compasiva que actúa como doctora e investigadora, dedicada a encontrar una cura para la transformación demoníaca y a derrotar a Muzan.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/25.webp",
+      "quote": "Dedico mi vida a ayudar a los humanos.",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Encontrada por primera vez por Tanjiro en Asakusa."
+      },
+      "affiliation": {
+        "name": "Aliados del Cuerpo de Exterminadores de Demonios",
+        "description": "Una científica y doctora demonio que ayuda a Tanjiro y al Cuerpo de Exterminadores de Demonios."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Utiliza la manipulación de la sangre para varios efectos, incluyendo ilusiones y control mental, así como para propósitos médicos.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Yushiro",
+      "age": 15,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Asistente y compañero de Tamayo, transformado en demonio por ella. Es ferozmente leal a Tamayo y a menudo irritable con los demás.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/26.webp",
+      "quote": "¡No toques a la Dama Tamayo!",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Introducido junto a Tamayo en Asakusa."
+      },
+      "affiliation": {
+        "name": "Aliados del Cuerpo de Exterminadores de Demonios",
+        "description": "El asistente demonio de Tamayo, que le brinda apoyo con sus habilidades visuales."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Le permite oscurecer la presencia, crear ilusiones y mejorar la visión.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Sakonji Urokodaki",
+      "age": 70,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El primer mentor de Tanjiro y el antiguo Hashira del Agua. Lleva una máscara de tengu para ocultar su expresión amable.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/27.webp",
+      "quote": "¡Entrena más duro!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "Se convierte en el primer entrenador de Tanjiro después de que su familia es asesinada."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios (Antiguo Hashira)",
+        "description": "El entrenador estricto pero amable de Tanjiro, conocido por su instrucción de la Respiración del Agua."
+      },
+      "combat_style": [
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "Un maestro de la Respiración del Agua, que entrena a futuros Exterminadores de Demonios.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Hotaru Haganezuka",
+      "age": 37,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Un herrero que forja la espada Nichirin de Tanjiro. Es extremadamente apasionado por las espadas y se enoja fácilmente.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/28.webp",
+      "quote": "¡Mi espada!",
+      "first_arc_appearance": {
+        "name": "Arco de la Primera Espada Nichirin",
+        "description": "Entrega la primera espada Nichirin de Tanjiro."
+      },
+      "affiliation": {
+        "name": "Aldea de los Herreros",
+        "description": "Un herrero dedicado y de mal genio que abastece a los Exterminadores de Demonios."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 29,
+      "name": "Kanao Tsuyuri",
+      "age": 16,
+      "gender": "Femenino",
+      "race": "Humano",
+      "description": "Una Exterminadora de Demonios y Tsuguko (sucesora) de Shinobu Kocho. Toma decisiones tirando una moneda hasta que Tanjiro la influye.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/29.webp",
+      "quote": "Si la moneda cae en cara, entonces seguiré mi corazón.",
+      "first_arc_appearance": {
+        "name": "Arco del Monte Natagumo",
+        "description": "Aparece por primera vez después de la misión del Monte Natagumo, capturando a Zenitsu e Inosuke."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "La aprendiz de Shinobu Kocho y una hábil Exterminadora de Demonios."
+      },
+      "combat_style": [
+        {
+          "id": 16,
+          "name": "Respiración Floral",
+          "description": "Un estilo de respiración derivado de la Respiración del Agua, caracterizado por movimientos ágiles y elegantes.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/flower-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Genya Shinazugawa",
+      "age": 16,
+      "gender": "Masculino",
+      "race": "Humano (con habilidades demoníacas)",
+      "description": "El hermano menor de Sanemi Shinazugawa y un Exterminador de Demonios. Gana poderes demoníacos temporales al consumir carne de demonio.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/30.webp",
+      "quote": "¡Me volveré más fuerte!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "Aparece durante la Selección Final, notablemente agresivo."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "Un Exterminador de Demonios que usa una pistola y tiene habilidades únicas parecidas a las de los demonios."
+      },
+      "combat_style": [
+        {
+          "id": 17,
+          "name": "Combate con Pistola",
+          "description": "Usa una pistola modificada para luchar contra demonios.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/gun-combat.webp"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Kanae Kocho",
+      "age": 17,
+      "gender": "Femenino",
+      "race": "Humano (Fallecida)",
+      "description": "La hermana mayor de Shinobu y la antigua Hashira Floral. Era amable y gentil, esperando un mundo donde humanos y demonios pudieran coexistir.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/31.webp",
+      "quote": "Espero que humanos y demonios puedan algún día ser amigos.",
+      "first_arc_appearance": {
+        "name": "Arco de la Mansión Mariposa (Flashback)",
+        "description": "Aparece en flashbacks que explican el pasado de Shinobu."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios (Antigua Hashira)",
+        "description": "La fallecida Hashira Floral, hermana mayor de Shinobu y hermana adoptiva de Kanao."
+      },
+      "combat_style": [
+        {
+          "id": 16,
+          "name": "Respiración Floral",
+          "description": "Una hábil usuaria de la Respiración Floral.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/flower-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Yoriichi Tsugikuni",
+      "age": 20,
+      "gender": "Masculino",
+      "race": "Humano (Fallecido)",
+      "description": "El Exterminador de Demonios más fuerte de la historia, que vivió hace siglos. Fue el originador de la Respiración Solar y el hermano gemelo de Michikatsu Tsugikuni (Kokushibo).",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/32.webp",
+      "quote": "Nací para esto.",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros (Flashback)",
+        "description": "Aparece en flashbacks sobre los orígenes de los Estilos de Respiración y la Marca de Exterminador de Demonios."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios (Legendario)",
+        "description": "El legendario Exterminador de Demonios que casi derrotó a Muzan Kibutsuji."
+      },
+      "combat_style": [
+        {
+          "id": 1,
+          "name": "Respiración Solar",
+          "description": "El originador y maestro de la Respiración Solar, el primer y más poderoso Estilo de Respiración.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/sun-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Maestro Herrero",
+      "age": 60,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "El jefe de la Aldea de los Herreros, responsable de supervisar la producción de espadas Nichirin.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/33.webp",
+      "quote": "El legado de nuestra aldea son las espadas.",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Juega un papel en la guía de Tanjiro y otros en la aldea."
+      },
+      "affiliation": {
+        "name": "Aldea de los Herreros (Jefe)",
+        "description": "El líder de la oculta Aldea de los Herreros."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 34,
+      "name": "Kozo Kanamori",
+      "age": 28,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Un herrero de la Aldea de los Herreros, responsable de las espadas de Inosuke.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/34.webp",
+      "quote": "¡Mis espadas son perfectas!",
+      "first_arc_appearance": {
+        "name": "Arco de la Aldea de los Herreros",
+        "description": "Aparece durante el Arco de la Aldea de los Herreros, quejándose de Inosuke."
+      },
+      "affiliation": {
+        "name": "Aldea de los Herreros",
+        "description": "Un herrero centrado en la calidad y la precisión."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 35,
+      "name": "Esposa de Kagaya Ubuyashiki (Amane)",
+      "age": 20,
+      "gender": "Femenino",
+      "race": "Humano",
+      "description": "La esposa de Kagaya Ubuyashiki, quien a menudo lo ayuda y le transmite sus mensajes debido a su deterioro de salud.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/35.webp",
+      "quote": "La voluntad de Oyakata-sama es absoluta.",
+      "first_arc_appearance": {
+        "name": "Arco de la Reunión de Hashira",
+        "description": "Aparece con Kagaya Ubuyashiki."
+      },
+      "affiliation": {
+        "name": "Familia Ubuyashiki",
+        "description": "Esposa del líder del Cuerpo de Exterminadores de Demonios, que apoya sus esfuerzos."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 36,
+      "name": "Murata",
+      "age": 16,
+      "gender": "Masculino",
+      "race": "Humano",
+      "description": "Un Exterminador de Demonios de bajo rango que a menudo se encuentra con Tanjiro y sus amigos. No es particularmente fuerte, pero es una buena persona.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/36.webp",
+      "quote": "¡Todavía estoy vivo!",
+      "first_arc_appearance": {
+        "name": "Arco del Monte Natagumo",
+        "description": "Aparece por primera vez como superviviente de la misión del Monte Natagumo."
+      },
+      "affiliation": {
+        "name": "Cuerpo de Exterminadores de Demonios",
+        "description": "Un compañero Exterminador de Demonios, que a menudo proporciona alivio cómico."
+      },
+      "combat_style": [
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "Un usuario de la Respiración del Agua, aunque no muy hábil.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Huérfanos de Gyomei Himejima (Varios)",
+      "age": "Varias",
+      "gender": "Mixto",
+      "race": "Humano",
+      "description": "Niños que fueron cuidados por Gyomei Himejima en un templo antes de un ataque de demonios, lo que lo llevó a su camino de Exterminador de Demonios.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/37.webp",
+      "quote": "Gracias, Gyomei-san.",
+      "first_arc_appearance": {
+        "name": "Pasado de Gyomei (Flashback)",
+        "description": "Aparecen en flashbacks que detallan el trágico pasado de Gyomei."
+      },
+      "affiliation": {
+        "name": "Antiguos Habitantes del Templo",
+        "description": "Niños que vivieron con Gyomei antes del ataque de los demonios."
+      },
+      "combat_style": []
+    },
+    {
+      "id": 38,
+      "name": "Demonio de las Manos",
+      "age": 47,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Un demonio grotesco encontrado por Tanjiro durante la Selección Final. Había estado encarcelado en el Monte Fujikasane durante décadas.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/38.webp",
+      "quote": "¡Mataré a todos los aprendices de Urokodaki!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "El principal antagonista durante la prueba de Selección Final."
+      },
+      "affiliation": {
+        "name": "Demonios (Sirvientes de Muzan)",
+        "description": "Un demonio que estaba atrapado en el Monte Fujikasane."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede generar y manipular múltiples brazos de su cuerpo.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Demonio del Pantano",
+      "age": 100,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Un demonio que secuestraba a chicas jóvenes y las escondía en su dimensión de Arte de Sangre Demoníaca, parecida a un pantano.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/39.webp",
+      "quote": "¡Otro para mi colección!",
+      "first_arc_appearance": {
+        "name": "Arco del Demonio del Pantano",
+        "description": "El primer demonio al que se enfrenta Tanjiro en una misión formal."
+      },
+      "affiliation": {
+        "name": "Demonios (Sirvientes de Muzan)",
+        "description": "Un demonio que se alimenta de mujeres jóvenes."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede crear y manipular una dimensión parecida a un pantano.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Demonio del Tambor (Kyogai)",
+      "age": 100,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Un antiguo demonio de la Sexta Luna Inferior que usaba tambores incrustados en su cuerpo para manipular la habitación en la que se encontraba.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/40.webp",
+      "quote": "¡Mi arte no es apreciado!",
+      "first_arc_appearance": {
+        "name": "Arco de la Casa del Tambor",
+        "description": "El principal antagonista del Arco de la Casa del Tambor."
+      },
+      "affiliation": {
+        "name": "Demonios (Antiguas Doce Lunas Demoníacas)",
+        "description": "Un demonio que controla el diseño de una mansión con tambores."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Manipula las habitaciones de su mansión golpeando tambores en su cuerpo.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Yahaba",
+      "age": 100,
+      "gender": "Masculino",
+      "race": "Demonio",
+      "description": "Un demonio que sirve a Muzan y posee ojos en sus manos, lo que le permite generar flechas invisibles.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/41.webp",
+      "quote": "¡Cómo te atreves a profanar mis ojos!",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Se une a Susamaru para luchar contra Tanjiro."
+      },
+      "affiliation": {
+        "name": "Demonios (Sirvientes de Muzan)",
+        "description": "Un demonio que usa flechas direccionales."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Genera flechas direccionales invisibles con sus ojos, controlando el movimiento.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Susamaru",
+      "age": 100,
+      "gender": "Femenino",
+      "race": "Demonio",
+      "description": "Una demonio que sirve a Muzan y maneja múltiples bolas de temari como proyectiles mortales.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/42.webp",
+      "quote": "¡Vamos a jugar más!",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Se une a Yahaba para luchar contra Tanjiro y Tamayo."
+      },
+      "affiliation": {
+        "name": "Demonios (Sirvientes de Muzan)",
+        "description": "Una demonio juguetona que usa bolas de temari como armas."
+      },
+      "combat_style": [
+        {
+          "id": 3,
+          "name": "Arte de Sangre Demoníaca",
+          "description": "Puede generar y lanzar múltiples y poderosas bolas de temari.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/blood-demon-art.webp"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Makomo",
+      "age": 13,
+      "gender": "Femenino",
+      "race": "Humano (Fantasma)",
+      "description": "Una de las antiguas aprendices de Sakonji Urokodaki, cuyo espíritu ayuda a Tanjiro a entrenar.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/43.webp",
+      "quote": "¡No te rindas!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "Aparece como un espíritu para ayudar a Tanjiro a entrenar."
+      },
+      "affiliation": {
+        "name": "Antigua Aprendiz de Urokodaki",
+        "description": "Un fantasma de una antigua aprendiz de Urokodaki que guía a Tanjiro."
+      },
+      "combat_style": [
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "Antigua practicante de la Respiración del Agua.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Sabito",
+      "age": 13,
+      "gender": "Masculino",
+      "race": "Humano (Fantasma)",
+      "description": "Uno de los antiguos aprendices de Sakonji Urokodaki, cuyo espíritu ayuda a Tanjiro a entrenar. Es más crítico y presiona más a Tanjiro.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/44.webp",
+      "quote": "¡Todavía no estás listo!",
+      "first_arc_appearance": {
+        "name": "Selección Final",
+        "description": "Aparece como un espíritu para ayudar a Tanjiro a entrenar."
+      },
+      "affiliation": {
+        "name": "Antiguo Aprendiz de Urokodaki",
+        "description": "Un fantasma de un antiguo aprendiz de Urokodaki que ayuda a Tanjiro en su entrenamiento."
+      },
+      "combat_style": [
+        {
+          "id": 2,
+          "name": "Respiración del Agua",
+          "description": "Antiguo practicante de la Respiración del Agua, excepcionalmente hábil.",
+          "img": "https://www.demonslayer-api.com/api/v1/combat-styles/images/water-breathing.webp"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Chachamaru",
+      "age": 5,
+      "gender": "Masculino",
+      "race": "Gato (Demonio)",
+      "description": "El gato de Tamayo, capaz de transformarse en una forma pequeña y portátil y de llevar jeringas para recolectar sangre de demonios.",
+      "img": "https://www.demonslayer-api.com/api/v1/characters/images/45.webp",
+      "quote": "Miau.",
+      "first_arc_appearance": {
+        "name": "Arco de Asakusa",
+        "description": "Introducido como el leal compañero de Tamayo."
+      },
+      "affiliation": {
+        "name": "Aliados del Cuerpo de Exterminadores de Demonios",
+        "description": "El gato demonio asistente de Tamayo."
+      },
+      "combat_style": []
+    }
+  ]

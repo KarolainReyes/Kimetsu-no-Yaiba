@@ -318,6 +318,7 @@ section h2 {
     gap: 2rem;
     margin-top: 2rem;
     justify-content: center; 
+    align-items: center;
 }
 
 .character-card {
@@ -328,6 +329,12 @@ section h2 {
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #475569;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
 }
 
 .character-card:hover {
@@ -336,8 +343,8 @@ section h2 {
 }
 
 .character-card img {
-    width: 100%;
-    height: 250px; 
+    max-height: 30vh;
+    
     object-fit: cover;
     display: block;
     border-bottom: 1px solid #475569;
