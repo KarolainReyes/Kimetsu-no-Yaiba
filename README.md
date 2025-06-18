@@ -14,6 +14,7 @@ Presenta un carrusel de imágenes de gran tamaño con escenas del anime, acompa�
 - **Funcionalidad**: Carrusel de imágenes automático con controles de navegación.
 - **Objetivo**: Captar la atención del usuario con imágenes impactantes e invitar a explorar el sitio.
 
+![vista-inicio jpg](https://github.com/user-attachments/assets/77c473e9-0dcd-48ef-a8e5-c6ab93aab832)
 
 ### 🧬 Vista de Especies
 Una sección interactiva que permite buscar y filtrar personajes según su especie: humano o demonio. Cuenta con un input de búsqueda por nombre y un filtro por categoría.
@@ -22,12 +23,18 @@ Una sección interactiva que permite buscar y filtrar personajes según su espec
   - Búsqueda dinámica de personajes.
   - Filtro selectivo por especie.
   - Botón para resetear los filtros.
+ 
+![vista-inicio jpg](https://github.com/user-attachments/assets/4f3a685d-e011-409a-acaf-1248cc4bad57)
+
 
 ### ✉️ Vista de Contacto
 Formulario sencillo para que los usuarios puedan enviar sugerencias o comentarios. Contiene campos para nombre, email y mensaje.
 
 - **Funcionalidad**: Formulario básico que simula una interacción de contacto.
 - **Objetivo**: Recoger retroalimentación o propuestas de los usuarios.
+
+![vista contacto jpg](https://github.com/user-attachments/assets/ea9e2b16-9baf-4b4a-a48e-465ea6e029a5)
+
 
 ### 🔚 Footer
 Pie de página con derechos reservados y crédito a la autora.
@@ -59,7 +66,7 @@ Pie de página con derechos reservados y crédito a la autora.
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repo.git
+   gh repo clone KarolainReyes/Kimetsu-no-Yaiba
    ```
 2. Abre el archivo `index.html` en tu navegador.
 3. ¡Explora el contenido y diviértete navegando por el mundo de *Kimetsu no Yaiba*!
